@@ -1,0 +1,11 @@
+# SicarioSpec framework selector (#18).
+# One framework key per line. `sicario verify` requires a control map
+# for each key listed here (SICARIO-MISSING-FRAMEWORK-MAP if absent).
+# Remove this file to fall back to the default coarse control-map check.
+# Supported keys: bsi-c5, ccm, eu-ai-act, fedramp, gdpr, hipaa, iso27001, nist-800-53, soc2, sox, ssdf
+# Experimental keys: ai-rmf, owasp-asvs, pci-dss
+#   Experimental maps are thinner than the supported set. They are
+#   enforced exactly like any other key when listed here, but are never
+#   selected by a profile default -- only by explicit --frameworks.
+ssdf
+iso27001

@@ -1,0 +1,14 @@
+{
+  "name": "sicario-docs-site",
+  "private": true,
+  "scripts": {
+    "build": "docusaurus build",
+    "start": "docusaurus start"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.8.0",
+    "@docusaurus/preset-classic": "^3.8.0",
+    "mermaid": "^11.0.0"
+  },
+  "devDependencies": {}
+}

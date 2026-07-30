@@ -1,0 +1,23 @@
+installed:
+  - sicario-guard
+settings:
+  auto_execute_hooks: true
+hooks:
+  after_specify:
+    - extension: sicario-guard
+      command: sicario.threatmodel
+      enabled: true
+      optional: false
+      description: Create or update threat model stubs after specification
+  after_plan:
+    - extension: sicario-guard
+      command: sicario.review
+      enabled: true
+      optional: false
+      description: Review plan for required governance gates
+  after_tasks:
+    - extension: sicario-guard
+      command: sicario.verify
+      enabled: true
+      optional: false
+      description: Verify security tasks and evidence requirements
