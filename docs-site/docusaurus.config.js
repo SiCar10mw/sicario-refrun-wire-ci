@@ -8,6 +8,10 @@ const config = {
   presets: [
     ['classic', {
       docs: {
+        // Serve docs at the site root: the theme's navbar title links to '/',
+        // and without a page there the generated site fails its own
+        // onBrokenLinks: 'throw' on the very first build (issue #72, layer 3).
+        routeBasePath: '/',
         sidebarPath: require.resolve('./sidebars.js')
       },
       blog: false,

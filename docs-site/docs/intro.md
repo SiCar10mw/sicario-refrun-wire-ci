@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # Project Documentation
 
 This site is generated from repository documentation. Keep docs and diagrams
